@@ -26,7 +26,7 @@ pageEncoding="UTF-8"%>
         </tr>
         <tr>
           <td>작성자</td>
-          <td>${b.bardWriter }</td>
+          <td>${b.boardWriter }</td>
         </tr>
         <tr>
           <td>조회수</td>

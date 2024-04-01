@@ -54,7 +54,7 @@ public class BoardDao {
 		return(ArrayList) sqlSession.selectList("boardMapper.selectReplyList", boardNo);
 		
 	}
-	public int selsctSearchCount(SqlSession sqlSession,HashMap<String,String>map) {
+	public int selectSearchCount(SqlSession sqlSession,HashMap<String,String>map) {
 		return sqlSession.selectOne("boardMapper.selectSearchCount",map);
 	}
 	  

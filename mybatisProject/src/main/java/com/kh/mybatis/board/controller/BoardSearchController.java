@@ -41,7 +41,7 @@ public class BoardSearchController extends HttpServlet {
 		map.put("keyword", keyword);
 		
 		BoardServiceImpl bService = new BoardServiceImpl();
-		int searchCount = bService.selsctSearchCount(map);//현재 검색결과에 맞는 게시글 총 개수
+		int searchCount = bService.selectSearchCount(map);//현재 검색결과에 맞는 게시글 총 개수
 		int currentPage = Integer.parseInt(request.getParameter("cpage"));
 		
 		PageInfo pi = Pagination.getPageInfo(searchCount,currentPage,10,5);

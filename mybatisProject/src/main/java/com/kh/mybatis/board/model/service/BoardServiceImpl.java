@@ -67,9 +67,9 @@ private BoardDao bDao = new BoardDao();
 	}
 
 	@Override
-	public int selsctSearchCount(HashMap<String, String> map) {
+	public int selectSearchCount(HashMap<String, String> map) {
 		SqlSession sqlSession = getSqlSession();
-		int searchCount = bDao.selectSearchCount(sqlSession,map);
+		int searchCount = bDao.selectSearchCount(sqlSession, map);
 		sqlSession.close();
 		return searchCount;
 		

@@ -49,11 +49,11 @@ public class BoardDetailController extends HttpServlet {
 		request.setAttribute("b", b);
 		request.setAttribute("list",list);
 		
-		request.getRequestDispatcher("WEB_INF/views/board/boardDetailView.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/views/board/boardDetailView.jsp").forward(request, response);
 		
 	}else {
 		request.setAttribute("errorMsg", "상세조회 실패");
-		request.getRequestDispatcher("WEB_INF/views/common/errorPage.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/views/common/errorPage.jsp").forward(request, response);
 	}
 		
 	}

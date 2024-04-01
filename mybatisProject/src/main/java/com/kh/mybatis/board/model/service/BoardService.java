@@ -30,5 +30,5 @@ public interface BoardService {
 	ArrayList<Reply> selectReplyList(int boardNo);
 	
 	//게시글 검색
-	int selsctSearchCount(HashMap<String , String>map);
+	int selectSearchCount(HashMap<String , String>map);
 }
